@@ -1,0 +1,36 @@
+@import "reset.css";
+
+body{
+    background-color: #eee;
+    display: flex;          /* 디스플레이 화면을 유동적으로 해주는 flex*/
+    flex-direction: column; /* 생성될 아이템 정렬 방향 */
+    align-items: center;    /* 가운데 정렬 */
+    padding-top: 50px;      /* 상단 여백 */
+}
+p{
+    margin-top: -20px;
+    margin-bottom : 20px
+}
+.canvas{
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);   /* 그림자 설정 */
+}
+.controls{
+    margin-top: 50px;
+}
+.controls .control-colors{
+    display: flex;
+}
+.control-colors .control-color{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);;
+    border-radius: 25px;             /* 50*50을 둥근 모양으로 하려면 /2 */
+    cursor: pointer;                 /* 커서 모양 */
+}    
+.control-color{
+    margin-right: 10px;
+}
