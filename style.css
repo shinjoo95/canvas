@@ -7,19 +7,18 @@ body{
     align-items: center;    /* 가운데 정렬 */
     padding-top: 50px;      /* 상단 여백 */
 }
-p{
-    margin-top: -20px;
-    margin-bottom : 20px
-}
 .canvas{
-    width: 700px;
-    height: 600px;
+    width: 900px;
+    height: 550px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);   /* 그림자 설정 */
 }
 .controls{
-    margin-top: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    /* 생성될 아이템 정렬 방향 */
 }
 .controls .control-colors{
     display: flex;
@@ -27,10 +26,35 @@ p{
 .control-colors .control-color{
     width: 50px;
     height: 50px;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
     border-radius: 25px;             /* 50*50을 둥근 모양으로 하려면 /2 */
     cursor: pointer;                 /* 커서 모양 */
 }    
 .control-color{
     margin-right: 10px;
+}
+.control-btns .controls{
+    margin-bottom: 30px;
+}
+.control-btns button{
+    text-align: center; 
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 0px;
+    width: 80px;
+    border-radius: 8px;
+    border: 2px solid rgb(196, 195, 195);   /* 테두리 설정 */
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;                /* 대문자로 변환 */
+    font-weight: 600;                         /* 폰트 굵기 설정 */
+    font-size: 12px;                        
+    margin-bottom: 20px;        
+}
+/* 클릭시 반응 설정 */
+.control-btns button:active{        
+    transform: scale(0.95);     /* 버튼 클릭시 해당 크기 변경 */
+}
+.control-range{
+    margin-bottom: 15px;
 }
